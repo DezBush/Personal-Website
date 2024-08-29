@@ -34,7 +34,7 @@ export const Contact = () => {
             <input type="email" name="user_email" className="w-full p-2 mb-4 border border-gray-300 rounded-md text-black"/>
             <label>Message</label>
             <textarea name="message" className="w-full p-2 mb-4 border border-gray-300 rounded-md text-black"/>
-            <input type="submit" value="Send" className="px-6 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 cursor-pointer"/>
+            <input type="submit" value="Send" className="px-6 py-2 text-white bg-amber-800 rounded-md hover:bg-amber-900 cursor-pointer"/>
         </form>
     </section>
   );
