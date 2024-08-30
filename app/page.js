@@ -1,5 +1,3 @@
-import Contact from "./contact.js"
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-light-brown text-coco">
@@ -63,8 +61,15 @@ export default function Home() {
           </li>
         </ul>
       </section>
-
-      <Contact/>
+      <section id="contact" className="flex flex-col justify-center items-center pb-24">
+        <h2 className="text-3xl font-bold pb-4">Contact</h2>
+        <section className="flex flex-row justify-center items-center gap-8">
+          <a href="https://www.linkedin.com/in/desmond-bush/" target="_blank"  rel="noopener noreferrer"
+            className='p-3 text-xl bg-sage text-white rounded-full hover:bg-green-800'>LinkedIn</a>
+          <a href={`mailto:${process.env.PERSONAL_EMAIL}?subject=Contact%20From%20Portfolio`}
+            className='p-3 text-xl bg-sage text-white rounded-full hover:bg-green-800'>Email</a>
+        </section>
+      </section>
     </div>
   )
 }
