@@ -66,7 +66,7 @@ export default function Home() {
         <section className="flex flex-row justify-center items-center gap-8">
           <a href="https://www.linkedin.com/in/desmond-bush/" target="_blank"  rel="noopener noreferrer"
             className='p-3 text-xl bg-sage text-white rounded-full hover:bg-green-800'>LinkedIn</a>
-          <a href={`mailto:${process.env.PERSONAL_EMAIL}?subject=Contact%20From%20Portfolio`}
+          <a href="mailto:desmondobush@gmail.com?subject=Contact%20From%20Portfolio"
             className='p-3 text-xl bg-sage text-white rounded-full hover:bg-green-800'>Email</a>
         </section>
       </section>
