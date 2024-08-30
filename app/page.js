@@ -2,9 +2,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-light-brown text-coco">
       <nav className="justify-items-stretch items-center fixed w-full bg-sage shadow-md z-50 top-0">
-        <div className="mx-0 flex justify-between items-center py-4 px-6">
-          <a href="/" className="font-bold text-4xl text-black text-left">Desmond Bush</a>
-          <div className="space-x-5 text-xl">
+        <div className="sm:text-center lg:mx-0 flex justify-between items-center py-4 px-6">
+          <a href="/" className="font-bold text-4xl text-black text-left lg:font-bold text-4xl text-black text-left">Desmond Bush</a>
+          <div className=" hidden lg:flex space-x-5 text-xl">
             <a href="#about" className="text-gray-800 hover:text-black">About</a>
             <a href="#experience" className="text-gray-800 hover:text-black">Experience</a>
             <a href="#contact" className="text-gray-800 hover:text-black">Contact</a>
@@ -12,7 +12,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <section id="about" className="grid grid-cols-2 pt-32 pl-12 gap-4">
+      <section id="about" className="sm:pt-32 gap-4 lg:grid grid-cols-2 pt-32 pl-12 gap-4">
         <div>
           <h1 className="text-4xl font-bold text-center pb-4">Hello, my name is Desmond!</h1>
           <p className="text-lg text-center p-2">I am a passionate software engineer based in New York City who specializes in full-stack development
@@ -22,7 +22,7 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <h1 className="text-4xl font-bold text-center pb-4">Skills</h1>
+          <h1 className="sm:text-4xl font-bold text-center py-4 lg:text-4xl font-bold text-center pb-4">Skills</h1>
           <div className="grid grid-rows-2 grid-flow-col gap-4 text-center">
             <h2 className="text-xl p-2 bg-sage text-white rounded-full">Python</h2>
             <h2 className="text-xl p-2 bg-sage text-white rounded-full">C++</h2>
