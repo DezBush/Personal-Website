@@ -25,8 +25,10 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="flex flex-col justify-center items-center py-32">
-        <h2 className="text-3xl font-bold">Contact Me</h2>
+    <section id="contact" className="flex flex-col justify-center items-center pb-24">
+        <h2 className="text-3xl font-bold">Contact</h2>
+        <a href="https://www.linkedin.com/in/desmond-bush/" target="_blank"  rel="noopener noreferrer"
+        className='py-3 text-xl bg-gradient-to-r from-coco via-slate-100 to-blue-700 bg-clip-text text-transparent animate-gradient'>LinkedIn</a>
         <form ref={form} onSubmit={sendEmail} className="flex flex-col items-center mt-8 w-full max-w-md">
             <label>Name</label>
             <input type="text" name="user_name" className="w-full p-2 mb-4 border border-gray-300 rounded-md text-black"/>

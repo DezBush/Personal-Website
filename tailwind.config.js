@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         'beige': '#FFF8E8',
-        'light-brown': '#876E51',
+        'light-brown': '#F7EED3',
         'sage': '#AAB396',
         'coco': '#402B14',
       }
