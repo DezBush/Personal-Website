@@ -229,7 +229,6 @@ export default function Home() {
         >
           {/* Top block */}
           <div className="left-top-block">
-            {/* FIX 1: single-line name — removed <br />, reduced font size slightly so it fits */}
             <h1 style={{
               fontSize: "2.5rem",
               fontWeight: 600,
@@ -287,7 +286,6 @@ export default function Home() {
         >
 
           {/* ABOUT */}
-          {/* FIX 2: reduced marginBottom from 120px to 72px to tighten gap before Experience */}
           <section id="about" style={{ marginBottom: "72px", scrollMarginTop: "80px" }}>
             <p
               className="mobile-section-label"
