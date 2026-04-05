@@ -2,31 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg:           #141414;
+  --bg-surface:   #1c1c1e;
+  --bg-hover:     #222224;
+  --amber:        #f5a623;
+  --amber-dim:    rgba(245, 166, 35, 0.1);
+  --amber-border: rgba(245, 166, 35, 0.18);
+  --muted:        #6b6b72;
+  --soft:         #a0a0ab;
+  --light:        #d4d4dc;
+  --bright:       #f0f0f5;
+  --border:       rgba(255, 255, 255, 0.07);
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--soft);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
 
-@keyframes gradient-text {
-  0% {
-    background-position: 0% 50%;
+  .nav-dash {
+    display: block;
+    height: 1px;
+    width: 28px;
+    background: var(--muted);
+    transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s;
   }
-  100% {
-    background-position: 200% 50%;
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 7px 0;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    transition: color 0.2s;
   }
-}
 
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient-text 5s linear infinite;
-}
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--bright);
+  }
 
-.hover\:animate-gradient:hover {
-  background-size: 200% 200%;
-  animation: gradient-text 5s linear infinite;
+  .nav-link:hover .nav-dash,
+  .nav-link.active .nav-dash {
+    width: 52px;
+    background: var(--amber);
+  }
 }
