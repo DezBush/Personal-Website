@@ -306,7 +306,7 @@ export default function Home() {
               clean architecture, and the small details that make software feel polished.
             </p>
             <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--soft)", marginBottom: "36px" }}>
-              Outside of work you can find me playing guitar, lifting weights, or reading Dune <a href="https://en.wikipedia.org/wiki/Sandworm_(Dune)">🪱</a>
+              Outside of work you can find me playing guitar, lifting weights, or reading Dune <a href="https://en.wikipedia.org/wiki/Sandworm_(Dune)" target="_blank" rel="noopener noreferrer">🪱</a>
             </p>
 
             {/* Skills */}
